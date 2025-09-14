@@ -677,3 +677,177 @@ body {
         padding-left: 1.2rem;
     }
 }
+
+/* Projects Section Styles */
+.projects-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+}
+
+.projects-subtitle {
+    font-family: 'LibreBaskerville', serif;
+    font-size: 1.1rem;
+    color: #333;
+    margin: 0;
+}
+
+.github-button {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: #738561;
+    color: #f6eedf;
+    padding: 0.8rem 1.5rem;
+    border-radius: 25px;
+    font-family: 'Cinzel', serif;
+    font-weight: bold;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.github-button:hover {
+    background: #8a9f78;
+}
+
+.github-button .sparkle {
+    width: 16px;
+    height: 16px;
+    animation: sparkle 2s ease-in-out infinite;
+}
+
+.sparkle-left {
+    animation-delay: 0s;
+}
+
+.sparkle-right {
+    animation-delay: 1s;
+}
+
+.projects-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.project-item {
+    border-radius: 15px;
+    padding: 0;
+    overflow: hidden;
+    background: #f6eedf; /* Add this - makes the whole container cream colored */
+}
+
+.project-header {
+    background: #f6eedf;
+    padding: 1rem 2rem;
+}
+
+.project-content {
+    background: #738561;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+    border-radius: 15px; /* Add this - rounds the green content area */
+    margin-top: -15px; /* Add this - pulls it up to overlap slightly */
+}
+
+.project-name {
+    font-family: 'Cinzel', serif;
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: #738561;
+    letter-spacing: 1px;
+    margin: 0;
+    background: #f6eedf;
+    border: 2px solid #738561;
+    padding: 0.5rem 1.2rem;
+    border-radius: 25px;
+    display: inline-block;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 3;
+    transform: translateY(20px) translateX(-20px); /* Add translateX(-20px) to shift left */
+}
+
+.project-description {
+    flex: 1;
+    color: white;
+}
+
+.project-description p {
+    font-family: 'LibreBaskerville', serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+.project-description p:last-child {
+    margin-bottom: 0;
+}
+
+.project-description strong {
+    color: #f6eedf;
+    font-weight: bold;
+}
+
+.project-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    flex-shrink: 0;
+}
+
+.project-btn {
+    background: transparent;
+    border: 2px solid #f6eedf;
+    color: #f6eedf;
+    padding: 0.6rem 1.2rem;
+    border-radius: 20px;
+    font-family: 'Cinzel', serif;
+    font-weight: bold;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+
+.project-btn:hover {
+    background: #f6eedf;
+    color: #738561;
+}
+
+/* Mobile responsive for projects */
+@media (max-width: 768px) {
+    .projects-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+    
+    .project-content {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    
+    .project-buttons {
+        flex-direction: row;
+        align-self: stretch;
+    }
+    
+    .project-btn {
+        flex: 1;
+        text-align: center;
+    }
+    
+    .project-description p {
+        text-align: left;
+        font-size: 0.95rem;
+    }
+}
