@@ -931,3 +931,104 @@ body {
         height: 150px;
     }
 }
+
+/* Contact Section Styles */
+#contact {
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.contact-content {
+    max-width: 600px;
+}
+
+.contact-name {
+    font-family: 'Cinzel', serif;
+    font-weight: bold;
+    font-size: 3rem;
+    color: #738561;
+    letter-spacing: 3px;
+    margin-bottom: 0.5rem;
+}
+
+.contact-title {
+    font-family: 'Cinzel', serif;
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: #999;
+    letter-spacing: 2px;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+}
+
+.contact-info {
+    margin-bottom: 3rem;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 1rem;
+    font-family: 'LibreBaskerville', serif;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.contact-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 1rem;
+    flex-shrink: 0;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.contact-text:hover {
+    color: #738561;
+    text-decoration: underline;
+}
+
+.contact-text {
+    flex: 1;
+    text-align: left;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.project-btn {
+    text-decoration: none;
+}
+.btn-contact {
+    background: #738561;
+    color: white;
+    padding: 1rem 3rem;
+    font-size: 1.2rem;
+}
+
+.btn-contact:hover {
+    background: transparent;
+    color: #738561;
+}
+
+/* Mobile responsive for contact */
+@media (max-width: 768px) {
+    .contact-name {
+        font-size: 2.2rem;
+    }
+    
+    .contact-title {
+        font-size: 1.1rem;
+    }
+    
+    .contact-item {
+        font-size: 1rem;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .contact-text {
+        text-align: center;
+    }
+}

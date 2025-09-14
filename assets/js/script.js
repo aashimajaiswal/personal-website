@@ -22,7 +22,7 @@ function updateActiveNavItem(clickedItem) {
 
 // Scroll spy functionality
 function initScrollSpy() {
-    const sections = ['hero', 'about', 'skills', 'experience', 'projects', 'blog'];
+    const sections = ['hero', 'about', 'skills', 'experience', 'projects', 'blog', 'contact'];
     
     window.addEventListener('scroll', function() {
         const scrollPosition = window.scrollY + 200;
@@ -92,7 +92,7 @@ document.head.appendChild(style);
 // Contextual scroll button functionality
 function updateScrollButton() {
     const scrollButton = document.getElementById('contextual-scroll');
-    const sections = ['hero', 'about', 'skills', 'experience', 'projects', 'blog'];
+    const sections = ['hero', 'about', 'skills', 'experience', 'projects', 'blog', 'contact'];
     const scrollPosition = window.scrollY + window.innerHeight / 2;
     
     let currentSection = 'hero';
