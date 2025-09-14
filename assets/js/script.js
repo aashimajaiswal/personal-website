@@ -88,3 +88,39 @@ style.textContent = `
     }
 `;
 document.head.appendChild(style);
+
+// Contextual scroll button functionality
+function updateScrollButton() {
+    const scrollButton = document.getElementById('contextual-scroll');
+    const sections = ['hero', 'about', 'skills', 'experience', 'projects', 'blog'];
+    const scrollPosition = window.scrollY + window.innerHeight / 2;
+    
+    let currentSection = 'hero';
+    
+    sections.forEach(sectionId => {
+        const section = document.getElementById(sectionId);
+        if (section) {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.offsetHeight;
+            
+            if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                currentSection = sectionId;
+            }
+        }
+    });
+    
+    // Set the next section
+    const currentIndex = sections.indexOf(currentSection);
+    const nextSection = sections[currentIndex + 1];
+    
+    if (nextSection) {
+        scrollButton.onclick = () => scrollToSection(nextSection);
+        scrollButton.style.display = 'flex';
+    } else {
+        scrollButton.style.display = 'none'; // Hide on last section
+    }
+}
+
+// Update button on scroll
+window.addEventListener('scroll', updateScrollButton);
+window.addEventListener('load', updateScrollButton);

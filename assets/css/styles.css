@@ -238,7 +238,7 @@ body {
     color: white;
 }
 
-/* Scroll Down Arrow */
+/* Scroll Down Arrow - Universal for all sections */
 .scroll-down {
     display: flex;
     flex-direction: column;
@@ -299,6 +299,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    position: relative;
 }
 
 .section-title {
@@ -338,6 +339,54 @@ body {
     font-weight: bold;
 }
 
+/* Skills Section Styles */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1.5rem;
+    margin-top: 2rem;
+    max-width: 1200px;
+}
+
+.skill-card {
+    background: #738561;
+    color: white;
+    padding: 2rem;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+    text-align: center;
+    grid-column: span 2;
+}
+
+.skill-card:nth-child(4) {
+    grid-column: 2 / 4;
+}
+
+.skill-card:nth-child(5) {
+    grid-column: 4 / 6;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+}
+
+.skill-title {
+    font-family: 'Cinzel', serif;
+    font-weight: bold;
+    font-size: 1.4rem;
+    color: #f6eedf;
+    margin-bottom: 1.5rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.skill-content {
+    font-family: 'LibreBaskerville', serif;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    opacity: 0.95;
+}
+
 /* Animations */
 @keyframes bounce {
     0%, 20%, 50%, 80%, 100% {
@@ -372,13 +421,33 @@ body {
 }
 
 /* Responsive Design */
-@media (max-width: 1024px) {
+@media (min-width: 769px) {
+    .scroll-down {
+        left: calc(380px + 50vw - 190px);
+    }
+}
+
+@media (max-width: 1024px) and (min-width: 769px) {
     .sidebar {
         width: 320px;
     }
     
     .main-content {
         margin-left: 320px;
+    }
+    
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+    
+    .skill-card {
+        grid-column: span 1;
+    }
+    
+    .skill-card:nth-child(4),
+    .skill-card:nth-child(5) {
+        grid-column: span 1;
     }
     
     .rotating-text-circle {
@@ -456,7 +525,30 @@ body {
         text-align: left;
     }
     
+    .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .skill-card {
+        grid-column: span 1;
+    }
+    
+    .skill-card:nth-child(4),
+    .skill-card:nth-child(5) {
+        grid-column: span 1;
+    }
+    
+    .skill-title {
+        font-size: 1.2rem;
+    }
+    
+    .skill-content {
+        font-size: 0.9rem;
+    }
+    
     .scroll-down {
+        left: 50vw;
         bottom: 20px;
     }
     
@@ -467,16 +559,5 @@ body {
     .cta-buttons {
         justify-content: center;
         flex-wrap: wrap;
-    }
-}
-@media (min-width: 769px) {
-    .scroll-down {
-        left: calc(380px + 50vw - 190px);
-    }
-}
-
-@media (max-width: 768px) {
-    .scroll-down {
-        left: 50vw;
     }
 }
