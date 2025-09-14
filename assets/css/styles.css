@@ -245,9 +245,9 @@ body {
     align-items: center;
     cursor: pointer;
     transition: all 0.3s ease;
-    position: absolute;
+    position: fixed;
     bottom: 30px;
-    left: calc(200px + 50% + 10px);
+    left: 50vw;
     transform: translateX(-50%);
     z-index: 10;
 }
@@ -467,5 +467,16 @@ body {
     .cta-buttons {
         justify-content: center;
         flex-wrap: wrap;
+    }
+}
+@media (min-width: 769px) {
+    .scroll-down {
+        left: calc(380px + 50vw - 190px);
+    }
+}
+
+@media (max-width: 768px) {
+    .scroll-down {
+        left: 50vw;
     }
 }
