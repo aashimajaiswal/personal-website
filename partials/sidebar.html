@@ -1,0 +1,40 @@
+<!-- Fixed Sidebar -->
+<div class="sidebar">
+    <div class="profile-section">
+        <!-- Rotating circular text -->
+        <div class="rotating-text-circle">
+            <svg viewBox="0 0 200 200" class="circular-text">
+                <defs>
+                    <path id="circle-path" d="M 100, 100 m -70, 0 a 70,70 0 1,1 140,0 a 70,70 0 1,1 -140,0" fill="none"/>
+                </defs>
+                <text class="rotating-text">
+                    <textPath href="#circle-path">
+                        AASHIMA JAISWAL • RESUME • AI/ML ENGINEER •
+                    </textPath>
+                </text>
+            </svg>
+
+            <!-- Profile image in center -->
+            <div class="profile-image">
+                <img src="assets/images/profile_photo.jpeg" alt="Aashima Jaiswal">
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Menu -->
+    <nav class="navigation">
+        <div class="nav-item active" onclick="scrollToSection('about')">ABOUT</div>
+        <div class="nav-item" onclick="scrollToSection('skills')">SKILLS</div>
+        <div class="nav-item" onclick="scrollToSection('experience')">EXPERIENCE</div>
+        <div class="nav-item" onclick="scrollToSection('projects')">PROJECTS</div>
+        <div class="nav-item" onclick="scrollToSection('blog')">BLOG</div>
+        <div class="nav-item" onclick="scrollToSection('contact')">CONTACT</div>
+    </nav>
+
+    <!-- Do Not Click Element -->
+    <div class="do-not-click">
+        <img src="assets/images/sparkle-green.png" alt="sparkle" class="sparkle sparkle-1">
+        <span>DO NOT CLICK</span>
+        <img src="assets/images/sparkle-green.png" alt="sparkle" class="sparkle sparkle-2">
+    </div>
+</div>

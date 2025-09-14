@@ -1,0 +1,32 @@
+/* About Section Styles */
+#about {
+    margin-bottom: 0;
+    padding-bottom: 2rem;
+}
+
+.about-content {
+    max-width: 800px;
+}
+
+.about-greeting {
+    font-family: var(--font-body);
+    font-weight: normal;
+    font-size: 1.2rem;
+    color: var(--text-dark);
+    margin-bottom: 2rem;
+    letter-spacing: 1px;
+}
+
+.about-text {
+    font-family: var(--font-body);
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: var(--text-dark);
+    margin-bottom: 2rem;
+    text-align: justify;
+}
+
+.about-text strong {
+    color: var(--primary-green);
+    font-weight: bold;
+}

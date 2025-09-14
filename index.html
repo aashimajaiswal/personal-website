@@ -4,7 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aashima Jaiswal - AI/ML Engineer & Data Scientist</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- Modular CSS Files -->
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/layout.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="stylesheet" href="assets/css/sections/hero.css">
+    <link rel="stylesheet" href="assets/css/sections/about.css">
+    <link rel="stylesheet" href="assets/css/sections/skills.css">
+    <link rel="stylesheet" href="assets/css/sections/experience.css">
+    <link rel="stylesheet" href="assets/css/sections/projects.css">
+    <link rel="stylesheet" href="assets/css/sections/blog.css">
+    <link rel="stylesheet" href="assets/css/sections/contact.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
 <body>
     <div class="container">
@@ -64,7 +76,7 @@
                 </p>
                 <div class="cta-buttons">
                     <a href="assets/docs/Aashima Jaiswal Resume.pdf" class="btn btn-primary" target="_blank" download>RESUME</a>
-                    <button class="btn btn-secondary">CONTACT</button>
+                    <button class="btn btn-secondary" onclick="scrollToSection('contact')">CONTACT</button>
                 </div>
             </section>
 
@@ -80,10 +92,10 @@
                         Melbourne.
                     </p>
                     <p class="about-text">
-                        I currently work as an AI Engineer Intern at <strong>HEINEKEN</strong>, developing and 
-                        productionising a marketing AI product with LLMs, image models, and agents 
-                        into scalable solutions. Previously, I built productionised NLP/ML systems at 
-                        <strong>CSIRO</strong>(Australian Govt Research Org) for cyberbullying detection and 
+                        I currently work as an AI Engineer Intern at HEINEKEN, developing and
+                        productionising a marketing AI product with LLMs, image models, and agents
+                        into scalable solutions. Previously, I built productionised NLP/ML systems at
+                        CSIRO (Australian Govt Research Org) for cyberbullying detection and 
                         automated ML pipelines. My data experience spans COVID-19 impact research at 
                         IIT Bombay and climate analytics dashboards at NTU. I'm seeking AI/ML Engineer 
                         opportunities to continue building innovative solutions.
@@ -202,11 +214,11 @@
                 
                 <div class="projects-header">
                     <p class="projects-subtitle">Find more of them on my</p>
-                    <div class="github-button">
+                    <a href="https://github.com/aashimajaiswal" target="_blank" class="github-button">
                         <img src="assets/images/sparkle-cream.png" alt="sparkle" class="sparkle sparkle-left">
                         <span>GITHUB</span>
                         <img src="assets/images/sparkle-cream.png" alt="sparkle" class="sparkle sparkle-right">
-                    </div>
+                    </a>
                 </div>
                 
                 <div class="projects-list">
@@ -221,8 +233,8 @@
                                 <p><strong>MY WORK:</strong> Built <strong>backend APIs</strong> using <strong>Python, Flask</strong> for user authentication, real-time meter data processing, and automated backup infrastructure. Managed technical integration coordinating <strong>Git</strong> workflows, API-frontend connectivity, and cross-team development collaboration</p>
                             </div>
                             <div class="project-buttons">
-                                <button class="project-btn">GITHUB</button>
-                                <button class="project-btn">LINK</button>
+                                <a href="https://github.com/gitansha/MeterMatrix" target="_blank" class="project-btn">GITHUB</a>
+                                <a href="https://metermatrix.onrender.com/" target="_blank" class="project-btn">LINK</a>
                             </div>
                         </div>
                     </div>
@@ -238,7 +250,7 @@
                                 <p><strong>MY WORK:</strong> Developed backend systems designing <strong>NoSQL</strong> database architecture, building <strong>APIs</strong> in <strong>node.js</strong>, and implementing <strong>Firebase</strong> authentication for scalable user management. Led <strong>Agile</strong> product management creating user stories, coordinating team deliverables, and presenting final integrated solution to stakeholders.</p>
                             </div>
                             <div class="project-buttons">
-                                <button class="project-btn">GITHUB</button>
+                                <a href="https://github.com/ageorgeh/it_project_vaaa" target="_blank" class="project-btn">GITHUB</a>
                                 <button class="project-btn">SLIDES</button>
                             </div>
                         </div>
@@ -251,11 +263,11 @@
                 
                 <div class="blogs-header">
                     <p class="blogs-subtitle">Find more of them on my</p>
-                    <div class="medium-button">
+                    <a href="https://medium.com/@aashimajaiswal" target="_blank" class="medium-button">
                         <img src="assets/images/sparkle-cream.png" alt="sparkle" class="sparkle sparkle-left">
                         <span>MEDIUM</span>
                         <img src="assets/images/sparkle-cream.png" alt="sparkle" class="sparkle sparkle-right">
-                    </div>
+                    </a>
                 </div>
                 
                 <div class="blogs-grid">
@@ -307,6 +319,9 @@
         </div>
     </div>
 
-    <script src="assets/js/script.js"></script>
+    <!-- Modular JavaScript Files -->
+    <script src="assets/js/modules/navigation.js"></script>
+    <script src="assets/js/modules/interactions.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>

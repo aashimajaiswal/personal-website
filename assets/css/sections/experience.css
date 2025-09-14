@@ -1,0 +1,83 @@
+/* Experience Section Styles */
+#experience {
+    margin-top: 0;
+    padding-top: 2rem;
+    justify-content: flex-start;
+}
+
+.experience-list {
+    max-width: 900px;
+    width: 100%;
+}
+
+.job-item {
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid rgba(115, 133, 97, 0.2);
+    width: 100%;
+    clear: both;
+}
+
+.job-item:last-child {
+    border-bottom: none;
+}
+
+.job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.job-title {
+    font-family: var(--font-heading);
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: var(--primary-green);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.job-duration {
+    font-family: var(--font-heading);
+    font-weight: bold;
+    font-size: 1rem;
+    color: var(--text-light);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.job-responsibilities {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.job-responsibilities li {
+    font-family: var(--font-body);
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+    text-align: justify;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.job-responsibilities li::before {
+    content: "•";
+    color: var(--primary-green);
+    font-size: 1.2rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.job-responsibilities li strong {
+    color: var(--primary-green);
+    font-weight: bold;
+}

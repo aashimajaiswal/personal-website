@@ -1,0 +1,140 @@
+/* Projects Section Styles */
+.projects-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+}
+
+.projects-subtitle {
+    font-family: var(--font-body);
+    font-size: 1.1rem;
+    color: var(--text-dark);
+    margin: 0;
+}
+
+.github-button {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: var(--primary-green);
+    color: var(--primary-cream);
+    padding: 0.8rem 1.5rem;
+    border-radius: var(--border-radius-lg);
+    font-family: var(--font-heading);
+    font-weight: bold;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+    text-decoration: none;
+}
+
+.github-button:hover {
+    background: #8a9f78;
+}
+
+.github-button .sparkle {
+    width: 16px;
+    height: 16px;
+    animation: sparkle 2s ease-in-out infinite;
+}
+
+.projects-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.project-item {
+    border-radius: var(--border-radius-md);
+    padding: 0;
+    overflow: hidden;
+    background: var(--primary-cream);
+}
+
+.project-header {
+    background: var(--primary-cream);
+    padding: 1rem 2rem;
+}
+
+.project-content {
+    background: var(--primary-green);
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+    border-radius: var(--border-radius-md);
+    margin-top: -15px;
+}
+
+.project-name {
+    font-family: var(--font-heading);
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: var(--primary-green);
+    letter-spacing: 1px;
+    margin: 0;
+    background: var(--primary-cream);
+    border: 2px solid var(--primary-green);
+    padding: 0.5rem 1.2rem;
+    border-radius: var(--border-radius-lg);
+    display: inline-block;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 3;
+    transform: translateY(20px) translateX(-20px);
+}
+
+.project-description {
+    flex: 1;
+    color: var(--text-white);
+}
+
+.project-description p {
+    font-family: var(--font-body);
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+.project-description p:last-child {
+    margin-bottom: 0;
+}
+
+.project-description strong {
+    color: var(--primary-cream);
+    font-weight: bold;
+}
+
+.project-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    flex-shrink: 0;
+}
+
+.project-btn {
+    background: transparent;
+    border: 2px solid var(--primary-cream);
+    color: var(--primary-cream);
+    padding: 0.6rem 1.2rem;
+    border-radius: 20px;
+    font-family: var(--font-heading);
+    font-weight: bold;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.project-btn:hover {
+    background: var(--primary-cream);
+    color: var(--primary-green);
+}

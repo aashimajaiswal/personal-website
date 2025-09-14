@@ -1,0 +1,228 @@
+/* Responsive Design */
+
+/* Desktop adjustments */
+@media (min-width: 769px) {
+    .scroll-down {
+        left: calc(var(--sidebar-width) + 50vw - 190px);
+    }
+}
+
+/* Tablet */
+@media (max-width: 1024px) and (min-width: 769px) {
+    .sidebar {
+        width: var(--sidebar-width-tablet);
+    }
+
+    .main-content {
+        margin-left: var(--sidebar-width-tablet);
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    .skill-card {
+        grid-column: span 1;
+    }
+
+    .skill-card:nth-child(4),
+    .skill-card:nth-child(5) {
+        grid-column: span 1;
+    }
+
+    .rotating-text-circle {
+        width: 180px;
+        height: 180px;
+    }
+
+    .profile-image {
+        width: 180px;
+        height: 180px;
+    }
+
+    .rotating-text {
+        font-size: 30px;
+    }
+
+    .section {
+        padding: 5rem 2rem;
+    }
+
+    .section-title {
+        font-size: 2.5rem;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+        padding: 2rem 1rem;
+    }
+
+    .main-content {
+        margin-left: 0;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .navigation {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.5rem;
+        padding: 1rem 0;
+    }
+
+    .nav-item {
+        font-size: 16px;
+        padding: 0.6rem 1rem;
+        margin: 0.3rem;
+    }
+
+    .hero-section {
+        padding: 2rem 1.5rem;
+        text-align: center;
+    }
+
+    .section {
+        padding: 3rem 1.5rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .about-greeting {
+        font-size: 1.1rem;
+    }
+
+    .about-text {
+        font-size: 1rem;
+        text-align: left;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .skill-card {
+        grid-column: span 1;
+    }
+
+    .skill-card:nth-child(4),
+    .skill-card:nth-child(5) {
+        grid-column: span 1;
+    }
+
+    .skill-title {
+        font-size: 1.2rem;
+    }
+
+    .skill-content {
+        font-size: 0.9rem;
+    }
+
+    .scroll-down {
+        left: 50vw;
+        bottom: 20px;
+    }
+
+    .main-title {
+        font-size: 2.5rem;
+    }
+
+    .cta-buttons {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    /* Mobile responsive for experience */
+    .job-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+
+    .job-title {
+        font-size: 1.1rem;
+    }
+
+    .job-duration {
+        font-size: 0.9rem;
+    }
+
+    .job-responsibilities li {
+        font-size: 0.95rem;
+        text-align: left;
+        padding-left: 1.2rem;
+    }
+
+    /* Mobile responsive for projects */
+    .projects-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .project-content {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .project-buttons {
+        flex-direction: row;
+        align-self: stretch;
+    }
+
+    .project-btn {
+        flex: 1;
+        text-align: center;
+    }
+
+    .project-description p {
+        text-align: left;
+        font-size: 0.95rem;
+    }
+
+    /* Mobile responsive for blogs */
+    .blogs-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .blogs-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .blog-card {
+        height: 150px;
+    }
+
+    /* Mobile responsive for contact */
+    .contact-name {
+        font-size: 2.2rem;
+    }
+
+    .contact-title {
+        font-size: 1.1rem;
+    }
+
+    .contact-item {
+        font-size: 1rem;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .contact-text {
+        text-align: center;
+    }
+}

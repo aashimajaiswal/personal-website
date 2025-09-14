@@ -1,0 +1,45 @@
+/* Font Face Declarations */
+@font-face {
+    font-family: 'Cinzel';
+    src: url('../fonts/Cinzel/static/Cinzel-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'LibreBaskerville';
+    src: url('../fonts/Libre_Baskerville/LibreBaskerville-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-display: swap;
+}
+
+/* CSS Variables */
+:root {
+    --primary-green: #738561;
+    --primary-cream: #f6eedf;
+    --text-dark: #333;
+    --text-light: #999;
+    --text-white: white;
+    --font-heading: 'Cinzel', serif;
+    --font-body: 'LibreBaskerville', serif;
+    --border-radius-sm: 4px;
+    --border-radius-md: 15px;
+    --border-radius-lg: 25px;
+    --transition-fast: 0.3s ease;
+    --sidebar-width: 380px;
+    --sidebar-width-tablet: 320px;
+}
+
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-body);
+    line-height: 1.6;
+    color: var(--text-dark);
+    overflow-x: hidden;
+}

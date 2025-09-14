@@ -1,0 +1,65 @@
+/* Contact Section Styles */
+#contact {
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.contact-content {
+    max-width: 600px;
+}
+
+.contact-name {
+    font-family: var(--font-heading);
+    font-weight: bold;
+    font-size: 3rem;
+    color: var(--primary-green);
+    letter-spacing: 3px;
+    margin-bottom: 0.5rem;
+}
+
+.contact-title {
+    font-family: var(--font-heading);
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: var(--text-light);
+    letter-spacing: 2px;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+}
+
+.contact-info {
+    margin-bottom: 3rem;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 1rem;
+    font-family: var(--font-body);
+    font-size: 1.1rem;
+    color: var(--text-dark);
+}
+
+.contact-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 1rem;
+    flex-shrink: 0;
+    opacity: 0.8;
+    transition: opacity var(--transition-fast);
+}
+
+.contact-text {
+    flex: 1;
+    text-align: left;
+    color: var(--text-dark);
+    text-decoration: none;
+    transition: color var(--transition-fast);
+}
+
+.contact-text:hover {
+    color: var(--primary-green);
+    text-decoration: underline;
+}
