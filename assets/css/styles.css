@@ -311,6 +311,23 @@ body {
     letter-spacing: 3px;
 }
 
+/* Section Layout Fixes */
+#about {
+    margin-bottom: 0;
+    padding-bottom: 2rem;
+}
+
+#experience {
+    margin-top: 0;
+    padding-top: 2rem;
+    justify-content: flex-start;
+}
+
+#skills {
+    margin-bottom: 0;
+    padding-bottom: 2rem;
+}
+
 /* About Section Styles */
 .about-content {
     max-width: 800px;
@@ -385,6 +402,84 @@ body {
     font-size: 0.95rem;
     line-height: 1.6;
     opacity: 0.95;
+}
+
+/* Experience Section Styles */
+.experience-list {
+    max-width: 900px;
+    width: 100%;
+}
+
+.job-item {
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid rgba(115, 133, 97, 0.2);
+    width: 100%;
+    clear: both;
+}
+
+.job-item:last-child {
+    border-bottom: none;
+}
+
+.job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.job-title {
+    font-family: 'Cinzel', serif;
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: #738561;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.job-duration {
+    font-family: 'Cinzel', serif;
+    font-weight: bold;
+    font-size: 1rem;
+    color: #999;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.job-responsibilities {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.job-responsibilities li {
+    font-family: 'LibreBaskerville', serif;
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #333;
+    margin-bottom: 1rem;
+    text-align: justify;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.job-responsibilities li::before {
+    content: "•";
+    color: #738561;
+    font-size: 1.2rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.job-responsibilities li strong {
+    color: #738561;
+    font-weight: bold;
 }
 
 /* Animations */
@@ -559,5 +654,26 @@ body {
     .cta-buttons {
         justify-content: center;
         flex-wrap: wrap;
+    }
+    
+    /* Mobile responsive for experience */
+    .job-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+    
+    .job-title {
+        font-size: 1.1rem;
+    }
+    
+    .job-duration {
+        font-size: 0.9rem;
+    }
+    
+    .job-responsibilities li {
+        font-size: 0.95rem;
+        text-align: left;
+        padding-left: 1.2rem;
     }
 }
