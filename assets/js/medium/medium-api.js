@@ -112,9 +112,11 @@ class MediumBlogIntegration {
               <h3 class="blog-card-title">${article.title}</h3>
               <time class="blog-card-date">${article.publishDate}</time>
             </div>
-            <a href="${article.link}" target="_blank" rel="noopener" class="blog-card-link">
-              Read More →
-            </a>
+            <div class="blog-card-footer">
+              <a href="${article.link}" target="_blank" rel="noopener" class="blog-card-link">
+                Read More →
+              </a>
+            </div>
           </div>
         `;
 

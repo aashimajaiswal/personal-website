@@ -69,10 +69,12 @@
     flex-direction: column;
     justify-content: space-between;
     color: var(--primary-cream);
+    box-sizing: border-box;
 }
 
 .blog-card-header {
-    margin-bottom: 1rem;
+    margin-bottom: auto;
+    flex-grow: 1;
 }
 
 .blog-card-title {
@@ -106,9 +108,12 @@
     color: var(--primary-cream);
     text-decoration: none;
     font-weight: bold;
-    align-self: flex-start;
     transition: all var(--transition-fast);
     border-bottom: 1px solid transparent;
+}
+
+.blog-card-footer {
+    margin-top: auto;
 }
 
 .blog-card-link:hover {
